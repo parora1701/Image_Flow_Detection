@@ -14,7 +14,8 @@ int main(int argc, char** argv)
 	CvCapture* webcam_image = cvCreateCameraCapture(0);
 
 	if (!webcam_image) {
-		cout << "No webcam found!!" << endl;
+		cout << "No webcam found!!!" << endl;
+
 		return -1;
 	}
 
