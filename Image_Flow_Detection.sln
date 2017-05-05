@@ -5,13 +5,15 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Image_Flow_Detection", "Image_Flow_Detection\Image_Flow_Detection.vcxproj", "{FFE89AC9-6C21-498F-884D-F19F484C81F7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{F978A66B-9EB8-463C-AB20-816BB3126666}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{A3FF720D-28B3-471F-931A-AEC92D9BEB35}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "opencv", "opencv", "{5E40BE32-3AE8-4A59-96B5-3EA167201F74}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "opencv", "opencv", "{7A36BE41-7808-4024-9CAF-CF20C8F03475}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{70A98A51-C991-4841-9C94-ECD5DAAF9AAB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{D3D2E54B-D587-4387-8A31-5EB57DC5F7BB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "debug", "debug", "{1B0B8CD7-8A38-4F32-9CAE-9ED146F19C95}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{3A1D7D54-A586-42AA-925E-040518499DA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "debug", "debug", "{FC25ABB8-EE37-47F7-B0C3-B50E03D7CEDF}"
 	ProjectSection(SolutionItems) = preProject
 		Dependencies\opencv\lib\debug\opencv_core2413d.dll = Dependencies\opencv\lib\debug\opencv_core2413d.dll
 		Dependencies\opencv\lib\debug\opencv_core2413d.lib = Dependencies\opencv\lib\debug\opencv_core2413d.lib
@@ -25,9 +27,60 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "debug", "debug", "{1B0B8CD7
 		Dependencies\opencv\lib\debug\opencv_video2413d.lib = Dependencies\opencv\lib\debug\opencv_video2413d.lib
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "release", "release", "{0B6739A6-AD8B-4F1E-9C6A-EADC9FD16A5B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "opencv2", "opencv2", "{76FAA0F3-EDEB-44E0-879C-2D9837D43020}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\opencv\include\opencv2\core.hpp = Dependencies\opencv\include\opencv2\core.hpp
+		Dependencies\opencv\include\opencv2\highgui.hpp = Dependencies\opencv\include\opencv2\highgui.hpp
+		Dependencies\opencv\include\opencv2\imgproc.hpp = Dependencies\opencv\include\opencv2\imgproc.hpp
+		Dependencies\opencv\include\opencv2\objdetect.hpp = Dependencies\opencv\include\opencv2\objdetect.hpp
+		Dependencies\opencv\include\opencv2\video.hpp = Dependencies\opencv\include\opencv2\video.hpp
+	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{51B6FDF1-C367-4D82-83C1-A26398644180}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{D73EB7D1-938C-44B7-A3C6-EC703A79ACCD}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\opencv\include\opencv2\core\affine.hpp = Dependencies\opencv\include\opencv2\core\affine.hpp
+		Dependencies\opencv\include\opencv2\core\core.hpp = Dependencies\opencv\include\opencv2\core\core.hpp
+		Dependencies\opencv\include\opencv2\core\core_c.h = Dependencies\opencv\include\opencv2\core\core_c.h
+		Dependencies\opencv\include\opencv2\core\cuda_devptrs.hpp = Dependencies\opencv\include\opencv2\core\cuda_devptrs.hpp
+		Dependencies\opencv\include\opencv2\core\devmem2d.hpp = Dependencies\opencv\include\opencv2\core\devmem2d.hpp
+		Dependencies\opencv\include\opencv2\core\eigen.hpp = Dependencies\opencv\include\opencv2\core\eigen.hpp
+		Dependencies\opencv\include\opencv2\core\gpumat.hpp = Dependencies\opencv\include\opencv2\core\gpumat.hpp
+		Dependencies\opencv\include\opencv2\core\internal.hpp = Dependencies\opencv\include\opencv2\core\internal.hpp
+		Dependencies\opencv\include\opencv2\core\mat.hpp = Dependencies\opencv\include\opencv2\core\mat.hpp
+		Dependencies\opencv\include\opencv2\core\opengl_interop.hpp = Dependencies\opencv\include\opencv2\core\opengl_interop.hpp
+		Dependencies\opencv\include\opencv2\core\opengl_interop_deprecated.hpp = Dependencies\opencv\include\opencv2\core\opengl_interop_deprecated.hpp
+		Dependencies\opencv\include\opencv2\core\operations.hpp = Dependencies\opencv\include\opencv2\core\operations.hpp
+		Dependencies\opencv\include\opencv2\core\types_c.h = Dependencies\opencv\include\opencv2\core\types_c.h
+		Dependencies\opencv\include\opencv2\core\version.hpp = Dependencies\opencv\include\opencv2\core\version.hpp
+		Dependencies\opencv\include\opencv2\core\wimage.hpp = Dependencies\opencv\include\opencv2\core\wimage.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "highgui", "highgui", "{4FE185FF-2D17-4FE1-AE98-0EF3A38700BD}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\opencv\include\opencv2\highgui\cap_ios.h = Dependencies\opencv\include\opencv2\highgui\cap_ios.h
+		Dependencies\opencv\include\opencv2\highgui\highgui.hpp = Dependencies\opencv\include\opencv2\highgui\highgui.hpp
+		Dependencies\opencv\include\opencv2\highgui\highgui_c.h = Dependencies\opencv\include\opencv2\highgui\highgui_c.h
+		Dependencies\opencv\include\opencv2\highgui\ios.h = Dependencies\opencv\include\opencv2\highgui\ios.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "imgproc", "imgproc", "{CD706120-C105-4B1B-8881-FD83704B80DD}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\opencv\include\opencv2\imgproc\imgproc.hpp = Dependencies\opencv\include\opencv2\imgproc\imgproc.hpp
+		Dependencies\opencv\include\opencv2\imgproc\imgproc_c.h = Dependencies\opencv\include\opencv2\imgproc\imgproc_c.h
+		Dependencies\opencv\include\opencv2\imgproc\types_c.h = Dependencies\opencv\include\opencv2\imgproc\types_c.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "video", "video", "{5230D40A-3041-4409-91DF-1F0D4DE99C87}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\opencv\include\opencv2\video\background_segm.hpp = Dependencies\opencv\include\opencv2\video\background_segm.hpp
+		Dependencies\opencv\include\opencv2\video\tracking.hpp = Dependencies\opencv\include\opencv2\video\tracking.hpp
+		Dependencies\opencv\include\opencv2\video\video.hpp = Dependencies\opencv\include\opencv2\video\video.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "objdetect", "objdetect", "{AFE580CF-D473-417E-A2A6-434FC389E11C}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\opencv\include\opencv2\objdetect\objdetect.hpp = Dependencies\opencv\include\opencv2\objdetect\objdetect.hpp
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,10 +103,15 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5E40BE32-3AE8-4A59-96B5-3EA167201F74} = {F978A66B-9EB8-463C-AB20-816BB3126666}
-		{70A98A51-C991-4841-9C94-ECD5DAAF9AAB} = {5E40BE32-3AE8-4A59-96B5-3EA167201F74}
-		{1B0B8CD7-8A38-4F32-9CAE-9ED146F19C95} = {70A98A51-C991-4841-9C94-ECD5DAAF9AAB}
-		{0B6739A6-AD8B-4F1E-9C6A-EADC9FD16A5B} = {70A98A51-C991-4841-9C94-ECD5DAAF9AAB}
-		{51B6FDF1-C367-4D82-83C1-A26398644180} = {5E40BE32-3AE8-4A59-96B5-3EA167201F74}
+		{7A36BE41-7808-4024-9CAF-CF20C8F03475} = {A3FF720D-28B3-471F-931A-AEC92D9BEB35}
+		{D3D2E54B-D587-4387-8A31-5EB57DC5F7BB} = {7A36BE41-7808-4024-9CAF-CF20C8F03475}
+		{3A1D7D54-A586-42AA-925E-040518499DA4} = {7A36BE41-7808-4024-9CAF-CF20C8F03475}
+		{FC25ABB8-EE37-47F7-B0C3-B50E03D7CEDF} = {3A1D7D54-A586-42AA-925E-040518499DA4}
+		{76FAA0F3-EDEB-44E0-879C-2D9837D43020} = {D3D2E54B-D587-4387-8A31-5EB57DC5F7BB}
+		{D73EB7D1-938C-44B7-A3C6-EC703A79ACCD} = {76FAA0F3-EDEB-44E0-879C-2D9837D43020}
+		{4FE185FF-2D17-4FE1-AE98-0EF3A38700BD} = {76FAA0F3-EDEB-44E0-879C-2D9837D43020}
+		{CD706120-C105-4B1B-8881-FD83704B80DD} = {76FAA0F3-EDEB-44E0-879C-2D9837D43020}
+		{5230D40A-3041-4409-91DF-1F0D4DE99C87} = {76FAA0F3-EDEB-44E0-879C-2D9837D43020}
+		{AFE580CF-D473-417E-A2A6-434FC389E11C} = {76FAA0F3-EDEB-44E0-879C-2D9837D43020}
 	EndGlobalSection
 EndGlobal
